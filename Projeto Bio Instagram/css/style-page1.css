@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(../assets/bg-mobile.svg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(../assets/moon.svg);
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(../assets/bg-mobile-light.svg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(../assets/sun.svg);
+}
+
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
